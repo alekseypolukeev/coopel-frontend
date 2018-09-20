@@ -20,11 +20,6 @@
         <q-item-main :label="$t('label.home')"/>
       </q-item>
 
-      <q-item @click.native="$router.push('/alfresco')">
-        <q-item-side icon="settings"/>
-        <q-item-main :label="$t('label.alfresco')"/>
-      </q-item>
-
       <q-item @click.native="$router.push('/messages')">
         <q-item-side icon="message"/>
         <q-item-main :label="$t('label.messages')"/>

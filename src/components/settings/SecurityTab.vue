@@ -1,7 +1,7 @@
 <template>
   <q-tab-pane class="flex flex-center row" name="security">
 
-    <div class="col-5 q-pt-md q-body-1">Изменить пароль</div>
+    <div class="col-5 q-pt-md q-body-1">{{ $t('settings.security.changePassword') }}</div>
     <div class="col-6 q-pt-md">
       <q-btn
         color="primary"
@@ -11,7 +11,7 @@
       />
     </div>
 
-    <div class="col-5 q-pt-md q-body-1">Завершить все сессии</div>
+    <div class="col-5 q-pt-md q-body-1">{{ $t('settings.security.revokeSessions') }}</div>
     <div class="col-6 q-pt-md">
       <q-btn
         color="primary"

@@ -87,5 +87,31 @@ export default {
     next: 'Далее',
     previous: 'Назад',
     send: 'Отправить'
+  },
+  confirmationStepper: {
+    clarify: {
+      title: 'Уточнить данные'
+    },
+    confirm: {
+      title: 'Подтвердить email',
+      body1: 'При регистрации на Ваш email было оправлено письмо с инструкциями, пожалуйста следуйте им.',
+      body2: 'Если ничего не пришло или срок действия ссылки истек, проверьте правильность указанного email адреса и отправьте еще раз.'
+    },
+    objects: {
+      title: 'Выбрать объекты'
+    }
+  },
+  settings: {
+    common: {
+      title: 'Общее'
+    },
+    security: {
+      title: 'Безопасность',
+      changePassword: 'Изменить пароль',
+      revokeSessions: 'Завершить все сессии'
+    },
+    objects: {
+      title: 'Объекты'
+    }
   }
 }

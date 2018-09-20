@@ -2,10 +2,10 @@
 export default {
   caption: {
     menu: 'Menu',
-    login: 'Login to Coople',
+    login: 'Login',
     join: 'Registration',
     passwordRecovery: 'Password recovery',
-    userConfirmationStepper: 'There are few steps to start using Coopel'
+    userConfirmationStepper: 'There are few steps left to start using Coopel'
   },
   dialog: {
     success: 'Done',
@@ -49,10 +49,10 @@ export default {
         passwordConfirm: 'Must be same as password'
       }
     },
-    passwordRecoveryLink: 'Forget password?',
+    passwordRecoveryLink: 'Forgot password?',
     newAccount: {
-      question: 'Have no account?',
-      link: 'Register.'
+      question: 'New to Coopel?',
+      link: 'Create account.'
     },
     haveAccount: {
       question: 'Already have account?',
@@ -66,19 +66,45 @@ export default {
     },
     passwordSet: {
       success: 'Password successfully changed, all sessions revoked.',
-      expired: 'Прошло более 24 часов или ссылка уже была использована, пожалуйста запросите восстановление пароля еще раз.'
+      expired: 'More than 24 hours have passed or link has already been used, please request password recovery again.'
     },
     revokeSessions: {
       success: 'You will have to login again on all devices, including this one.'
     },
     emailConfirm: {
       success: 'Email successfully confirmed.',
-      expired: 'Прошло более 24 часов или ссылка уже была использована, пожалуйста войдите в личный кабинет и запросите подтверждение email еще раз.'
+      expired: 'More than 24 hours have passed or link has already been used, please login and request email confirmation again.'
     }
   },
   button: {
     next: 'Next',
     previous: 'Back',
     send: 'Send'
+  },
+  confirmationStepper: {
+    clarify: {
+      title: 'Clarify account data'
+    },
+    confirm: {
+      title: 'Confirm email',
+      body1: 'We sent next steps to your email after registration.',
+      body2: 'If nothing received or link expired, please check account email and send one more time.'
+    },
+    objects: {
+      title: 'Find objects'
+    }
+  },
+  settings: {
+    common: {
+      title: 'Account'
+    },
+    security: {
+      title: 'Security',
+      changePassword: 'Change password',
+      revokeSessions: 'Revoke all sessions'
+    },
+    objects: {
+      title: 'Objects'
+    }
   }
 }

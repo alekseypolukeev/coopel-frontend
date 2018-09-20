@@ -9,8 +9,8 @@
       alternative-labels
     >
       <q-step
-        name="step-1"
-        title="Уточнить данные"
+        name="clarify"
+        :title="$t('confirmationStepper.clarify.title')"
         icon="settings"
         :disable="hasUserRole()"
       >
@@ -26,18 +26,18 @@
       </q-step>
 
       <q-step
-        name="step-2"
-        title="Подтвердить email"
+        name="confirm"
+        :title="$t('confirmationStepper.confirm.title')"
         icon="email"
         :error="emailConfirmation.error"
         :disable="hasUserRole()"
       >
         <div class="flex-center column">
           <div class="q-subheading q-pb-md">
-            При регистрации на Ваш email было оправлено письмо с инструкциями, пожалуйста следуйте им.
+            {{ $t('confirmationStepper.confirm.body1') }}
           </div>
           <div class="q-subheading q-pb-md">
-            Если ничего не пришло или срок действия ссылки истек, проверьте правильность указанного email адреса и отправьте еще раз.
+            {{ $t('confirmationStepper.confirm.body2') }}
           </div>
           <q-btn
             color="primary"
@@ -66,12 +66,12 @@
       </q-step>
 
       <q-step
-        name="step-3"
-        title="Выбрать объекты"
+        name="objects"
+        :title="$t('confirmationStepper.objects.title')"
         icon="store_mall_directory"
         :disable="hasCooperativeRole()"
       >
-        <div>Step 3</div>
+        <div>TBD</div>
 
         <q-stepper-navigation>
           <q-btn
@@ -94,7 +94,7 @@ export default {
   components: {UpdateUserSettings},
   data () {
     return {
-      currentStep: this.hasUserRole() ? 'step-3' : 'step-1',
+      currentStep: this.hasUserRole() ? 'objects' : 'clarify',
       emailConfirmation: {
         error: false,
         buttonDisabled: false,

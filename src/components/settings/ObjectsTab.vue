@@ -1,5 +1,6 @@
 <template>
   <q-tab-pane name="objects">
+    TBD
   </q-tab-pane>
 </template>
 

@@ -7,14 +7,14 @@
         slot="title"
         name="account"
         icon="perm_identity"
-        label="Общее"
+        :label="$t('settings.common.title')"
       />
       <q-route-tab
         to="/settings?tab=security"
         slot="title"
         name="security"
         icon="vpn_key"
-        label="Безопасность"
+        :label="$t('settings.security.title')"
       />
       <q-route-tab
         to="/settings?tab=objects"
@@ -22,7 +22,7 @@
         slot="title"
         name="objects"
         icon="store_mall_directory"
-        label="Объекты"
+        :label="$t('settings.objects.title')"
       />
 
       <account-tab/>

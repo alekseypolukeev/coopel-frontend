@@ -62,8 +62,8 @@ export function doLogout ({ state, commit }, notify) {
 
   if (notify) {
     Dialog.create({
-      title: 'Внимание',
-      message: 'Сессия завершена. Вы будете перенаправлены на страницу авторизации.',
+      title: 'Warning',
+      message: 'Session completed. You will be redirected to login page.',
       color: 'info',
       ok: true,
       preventClose: true

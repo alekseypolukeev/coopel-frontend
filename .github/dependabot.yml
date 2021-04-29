@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: vue-i18n
+    versions:
+    - 8.22.4
+    - 8.23.0
+    - 8.24.0
+    - 8.24.1
+    - 8.24.2
+    - 8.24.3
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: strip-ansi
+    versions:
+    - 6.0.0
+  - dependency-name: eslint-plugin-promise
+    versions:
+    - 4.2.1
